@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5552A7681AEDF91600DCD4DA /* AddWorkoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5552A7671AEDF91600DCD4DA /* AddWorkoutView.xib */; };
+		5552A76A1AEDF9A200DCD4DA /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5552A7691AEDF9A200DCD4DA /* AddWorkoutView.swift */; };
 		55B1C0C21AE4C85A0082110A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B1C0C11AE4C85A0082110A /* AppDelegate.swift */; };
 		55B1C0C91AE4C85A0082110A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B1C0C81AE4C85A0082110A /* Images.xcassets */; };
 		55B1C0CC1AE4C85A0082110A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55B1C0CA1AE4C85A0082110A /* LaunchScreen.xib */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5552A7671AEDF91600DCD4DA /* AddWorkoutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddWorkoutView.xib; sourceTree = "<group>"; };
+		5552A7691AEDF9A200DCD4DA /* AddWorkoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
 		55B1C0BC1AE4C85A0082110A /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B1C0C01AE4C85A0082110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55B1C0C11AE4C85A0082110A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				55B1C0C11AE4C85A0082110A /* AppDelegate.swift */,
 				55B1C0E11AE4C8800082110A /* MainWindow.swift */,
 				55B1C0E21AE4C8800082110A /* MainWindow.xib */,
+				5552A7691AEDF9A200DCD4DA /* AddWorkoutView.swift */,
+				5552A7671AEDF91600DCD4DA /* AddWorkoutView.xib */,
 				55B1C0C81AE4C85A0082110A /* Images.xcassets */,
 				55B1C0CA1AE4C85A0082110A /* LaunchScreen.xib */,
 				55B1C0BF1AE4C85A0082110A /* Supporting Files */,
@@ -194,6 +200,7 @@
 			files = (
 				55B1C0CC1AE4C85A0082110A /* LaunchScreen.xib in Resources */,
 				55B1C0C91AE4C85A0082110A /* Images.xcassets in Resources */,
+				5552A7681AEDF91600DCD4DA /* AddWorkoutView.xib in Resources */,
 				55B1C0E41AE4C8800082110A /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55B1C0E31AE4C8800082110A /* MainWindow.swift in Sources */,
+				5552A76A1AEDF9A200DCD4DA /* AddWorkoutView.swift in Sources */,
 				55B1C0C21AE4C85A0082110A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +409,7 @@
 				55B1C0DD1AE4C85A0082110A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55B1C0DE1AE4C85A0082110A /* Build configuration list for PBXNativeTarget "FitnessAppTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +418,7 @@
 				55B1C0E01AE4C85A0082110A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

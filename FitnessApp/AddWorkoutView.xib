@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddWorkoutView" customModule="FitnessApp" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="RTk-ii-XhU" id="eXD-QV-Ifw"/>
+                <outlet property="backButton" destination="fEl-Qp-8Zh" id="VDp-z9-i6d"/>
+                <outlet property="repAmount" destination="Juz-sj-bGX" id="8Lo-C6-0gT"/>
+                <outlet property="view" destination="iN0-l3-epB" id="uvs-Da-22Y"/>
+                <outlet property="weightAmount" destination="R13-bd-Ke4" id="joo-Yl-ngB"/>
+                <outlet property="workoutName" destination="NeE-qh-qpc" id="oEM-rr-Cue"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xid-lt-lbe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <items>
+                        <navigationItem title="Add New Workout" id="ddq-sr-oRa">
+                            <barButtonItem key="leftBarButtonItem" title="Back" id="fEl-Qp-8Zh">
+                                <connections>
+                                    <action selector="dismissAddWorkoutView:" destination="-1" id="EIj-xz-VrM"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="Add Item" id="RTk-ii-XhU">
+                                <connections>
+                                    <action selector="addWorkout:" destination="-1" id="Mix-iz-0Rk"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Juz-sj-bGX">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excercise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZz-mf-zNn">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCo-qh-hgG">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reps" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wZ-7a-RdM">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NeE-qh-qpc">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R13-bd-Ke4">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date - Click to Change" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oks-UW-BPa">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="173" id="3wJ-KG-gmL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="3wJ-KG-gmL"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <include reference="3wJ-KG-gmL"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8wZ-7a-RdM" firstAttribute="leading" secondItem="yCo-qh-hgG" secondAttribute="leading" id="0Df-cp-0hs"/>
+                <constraint firstItem="VZz-mf-zNn" firstAttribute="leading" secondItem="yCo-qh-hgG" secondAttribute="leading" id="1xx-WB-mVx"/>
+                <constraint firstItem="R13-bd-Ke4" firstAttribute="top" secondItem="oks-UW-BPa" secondAttribute="bottom" constant="65" id="7c8-3E-mZT"/>
+                <constraint firstItem="R13-bd-Ke4" firstAttribute="leading" secondItem="NeE-qh-qpc" secondAttribute="leading" id="7fR-sA-ipj"/>
+                <constraint firstItem="VZz-mf-zNn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="33" id="8px-eZ-Dnh"/>
+                <constraint firstAttribute="trailing" secondItem="NeE-qh-qpc" secondAttribute="trailing" constant="33" id="AGo-5O-qdG"/>
+                <constraint firstItem="VZz-mf-zNn" firstAttribute="baseline" secondItem="NeE-qh-qpc" secondAttribute="baseline" id="Ab4-OQ-Joy"/>
+                <constraint firstItem="yCo-qh-hgG" firstAttribute="baseline" secondItem="R13-bd-Ke4" secondAttribute="baseline" id="Cqm-oW-0FE"/>
+                <constraint firstItem="R13-bd-Ke4" firstAttribute="top" secondItem="NeE-qh-qpc" secondAttribute="bottom" constant="36" id="E1h-cg-dmF"/>
+                <constraint firstItem="NeE-qh-qpc" firstAttribute="leading" secondItem="VZz-mf-zNn" secondAttribute="trailing" constant="47" id="Gfs-Ki-9Na"/>
+                <constraint firstItem="Xid-lt-lbe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LB0-z5-Jqm"/>
+                <constraint firstAttribute="trailing" secondItem="Xid-lt-lbe" secondAttribute="trailing" id="Oab-ur-rJe"/>
+                <constraint firstItem="Juz-sj-bGX" firstAttribute="top" secondItem="R13-bd-Ke4" secondAttribute="bottom" constant="40" id="W0K-Ko-JtQ"/>
+                <constraint firstItem="R13-bd-Ke4" firstAttribute="leading" secondItem="Juz-sj-bGX" secondAttribute="leading" id="Wwp-BP-vfe"/>
+                <constraint firstItem="NeE-qh-qpc" firstAttribute="trailing" secondItem="R13-bd-Ke4" secondAttribute="trailing" id="ay5-Z7-6DE"/>
+                <constraint firstItem="R13-bd-Ke4" firstAttribute="trailing" secondItem="Juz-sj-bGX" secondAttribute="trailing" id="fuI-7o-Mr2"/>
+                <constraint firstItem="oks-UW-BPa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="49" id="gHK-ca-GV8"/>
+                <constraint firstItem="8wZ-7a-RdM" firstAttribute="baseline" secondItem="Juz-sj-bGX" secondAttribute="baseline" id="kXn-Q8-Hop"/>
+                <constraint firstItem="Xid-lt-lbe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="mnA-7M-9Bm"/>
+                <constraint firstAttribute="centerX" secondItem="oks-UW-BPa" secondAttribute="centerX" id="rNy-nM-8jh"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Xid-lt-lbe"/>
+                    <exclude reference="Juz-sj-bGX"/>
+                    <exclude reference="VZz-mf-zNn"/>
+                    <exclude reference="yCo-qh-hgG"/>
+                    <exclude reference="8wZ-7a-RdM"/>
+                    <exclude reference="NeE-qh-qpc"/>
+                    <exclude reference="R13-bd-Ke4"/>
+                    <exclude reference="oks-UW-BPa"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="0Df-cp-0hs"/>
+                    <exclude reference="kXn-Q8-Hop"/>
+                    <exclude reference="W0K-Ko-JtQ"/>
+                    <exclude reference="AGo-5O-qdG"/>
+                    <exclude reference="Gfs-Ki-9Na"/>
+                    <exclude reference="ay5-Z7-6DE"/>
+                    <exclude reference="7c8-3E-mZT"/>
+                    <exclude reference="7fR-sA-ipj"/>
+                    <exclude reference="E1h-cg-dmF"/>
+                    <exclude reference="Wwp-BP-vfe"/>
+                    <exclude reference="fuI-7o-Mr2"/>
+                    <exclude reference="1xx-WB-mVx"/>
+                    <exclude reference="8px-eZ-Dnh"/>
+                    <exclude reference="Ab4-OQ-Joy"/>
+                    <exclude reference="gHK-ca-GV8"/>
+                    <exclude reference="rNy-nM-8jh"/>
+                    <exclude reference="Cqm-oW-0FE"/>
+                    <exclude reference="LB0-z5-Jqm"/>
+                    <exclude reference="Oab-ur-rJe"/>
+                    <exclude reference="mnA-7M-9Bm"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular">
+                <mask key="subviews">
+                    <include reference="Xid-lt-lbe"/>
+                    <include reference="Juz-sj-bGX"/>
+                    <include reference="VZz-mf-zNn"/>
+                    <include reference="yCo-qh-hgG"/>
+                    <include reference="8wZ-7a-RdM"/>
+                    <include reference="NeE-qh-qpc"/>
+                    <include reference="R13-bd-Ke4"/>
+                    <include reference="oks-UW-BPa"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="0Df-cp-0hs"/>
+                    <include reference="kXn-Q8-Hop"/>
+                    <include reference="W0K-Ko-JtQ"/>
+                    <include reference="AGo-5O-qdG"/>
+                    <include reference="Gfs-Ki-9Na"/>
+                    <include reference="ay5-Z7-6DE"/>
+                    <include reference="7c8-3E-mZT"/>
+                    <include reference="7fR-sA-ipj"/>
+                    <include reference="E1h-cg-dmF"/>
+                    <include reference="Wwp-BP-vfe"/>
+                    <include reference="fuI-7o-Mr2"/>
+                    <include reference="1xx-WB-mVx"/>
+                    <include reference="8px-eZ-Dnh"/>
+                    <include reference="Ab4-OQ-Joy"/>
+                    <include reference="gHK-ca-GV8"/>
+                    <include reference="rNy-nM-8jh"/>
+                    <include reference="Cqm-oW-0FE"/>
+                    <include reference="LB0-z5-Jqm"/>
+                    <include reference="Oab-ur-rJe"/>
+                    <include reference="mnA-7M-9Bm"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

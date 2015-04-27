@@ -9,7 +9,12 @@
 import UIKit
 
 class MainWindow: UIViewController {
-
+    
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var addWorkoutButton: UIBarButtonItem!
+    @IBOutlet var emptyTableViewLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +26,14 @@ class MainWindow: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func addNewWorkout(sender: AnyObject){
+        
+        var addWorkoutView = AddWorkoutView(nibName: "AddWorkoutView", bundle: nil)
+        addWorkoutView.setMainWindow(self)
+        
+        self.presentViewController(addWorkoutView, animated: true, completion: nil)
+        
+    }
 
     /*
     // MARK: - Navigation

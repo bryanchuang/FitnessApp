@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainWindow" customModule="FitnessApp" customModuleProvider="target">
             <connections>
+                <outlet property="addWorkoutButton" destination="4iR-vq-GmZ" id="gJE-Ns-R58"/>
+                <outlet property="emptyTableViewLabel" destination="WAW-tN-dge" id="fpm-Hf-pmu"/>
+                <outlet property="tableView" destination="Tpl-zv-a4Z" id="bvc-0I-GjR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,7 +28,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <items>
                         <navigationItem title="Weight Workouts" id="I8d-4o-dhx">
-                            <barButtonItem key="rightBarButtonItem" title="Add Workout" id="4iR-vq-GmZ"/>
+                            <barButtonItem key="rightBarButtonItem" title="Add Workout" id="4iR-vq-GmZ">
+                                <connections>
+                                    <action selector="addNewWorkout:" destination="-1" id="n1d-6v-JiR"/>
+                                </connections>
+                            </barButtonItem>
                         </navigationItem>
                     </items>
                 </navigationBar>
@@ -35,15 +42,14 @@
                         <constraint firstAttribute="height" constant="483" id="Vk0-Ma-Asl"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="Vk0-Ma-Asl"/>
                         </mask>
                     </variation>
-                    <variation key="heightClass=regular" misplaced="YES">
-                        <rect key="frame" x="43" y="83" width="514" height="483"/>
+                    <variation key="heightClass=regular">
                         <mask key="constraints">
                             <include reference="Vk0-Ma-Asl"/>
                         </mask>
@@ -53,7 +59,7 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="WAW-tN-dge" firstAttribute="centerX" secondItem="VFB-qK-IO0" secondAttribute="centerX" id="2HE-LA-qCP"/>
-                <constraint firstItem="VFB-qK-IO0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="5Wy-hL-LJT"/>
+                <constraint firstItem="VFB-qK-IO0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="5Wy-hL-LJT"/>
                 <constraint firstAttribute="centerX" secondItem="Tpl-zv-a4Z" secondAttribute="centerX" id="DPj-YP-O1y"/>
                 <constraint firstItem="VFB-qK-IO0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EZr-Ck-btg"/>
                 <constraint firstItem="VFB-qK-IO0" firstAttribute="trailing" secondItem="Tpl-zv-a4Z" secondAttribute="trailing" id="YQ0-yp-op7"/>
@@ -68,14 +74,14 @@
                     <exclude reference="WAW-tN-dge"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="2HE-LA-qCP"/>
+                    <exclude reference="bGS-qA-fjI"/>
+                    <exclude reference="gbJ-Aq-Xun"/>
                     <exclude reference="5Wy-hL-LJT"/>
                     <exclude reference="EZr-Ck-btg"/>
                     <exclude reference="YQ0-yp-op7"/>
                     <exclude reference="mPr-1w-FLS"/>
                     <exclude reference="vOF-Vp-5ot"/>
-                    <exclude reference="2HE-LA-qCP"/>
-                    <exclude reference="bGS-qA-fjI"/>
-                    <exclude reference="gbJ-Aq-Xun"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular">
@@ -84,17 +90,16 @@
                     <include reference="WAW-tN-dge"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="2HE-LA-qCP"/>
+                    <include reference="bGS-qA-fjI"/>
+                    <include reference="gbJ-Aq-Xun"/>
                     <include reference="5Wy-hL-LJT"/>
                     <include reference="EZr-Ck-btg"/>
                     <include reference="YQ0-yp-op7"/>
                     <include reference="mPr-1w-FLS"/>
                     <include reference="vOF-Vp-5ot"/>
-                    <include reference="2HE-LA-qCP"/>
-                    <include reference="bGS-qA-fjI"/>
-                    <include reference="gbJ-Aq-Xun"/>
                 </mask>
             </variation>
         </view>
-        <barButtonItem style="plain" systemItem="flexibleSpace" id="CBJ-Zb-2Q3"/>
     </objects>
 </document>
